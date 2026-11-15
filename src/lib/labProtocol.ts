@@ -23,6 +23,20 @@ export const TOOL_NAMES = [
 ] as const
 export type ToolName = (typeof TOOL_NAMES)[number]
 
+/** Tools that only do on screen what was asked: once they run, a command is complete. */
+const COMMAND_TOOLS: ReadonlySet<string> = new Set<ToolName>(['navigate', 'filter_tests', 'open_citation'])
+
+/**
+ * Whether a finished turn shows REFUSAL. The refusal is for a question the sources can't answer.
+ * A pure command ("Take me to the ranking page") has nothing to answer: its tool line ("opened
+ * Rank") is the reply, so a refusal under it would be wrong. When no tool ran, or any tool that
+ * works something out or picks something out ran, an empty answer is a real refusal.
+ */
+export function showsRefusal(refused: boolean, toolNames: readonly string[]): boolean {
+  if (!refused) return false
+  return toolNames.length === 0 || !toolNames.every((name) => COMMAND_TOOLS.has(name))
+}
+
 /** What the dock tells the server about the screen, so tools start from what is showing. */
 export interface LabContext {
   view: ViewId
