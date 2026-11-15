@@ -1,6 +1,6 @@
 import { CircleAlert, CircleCheck } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
-import { DROP_REASON_TEXT, REFUSAL, type LabStage } from '../../lib/labProtocol'
+import { DROP_REASON_TEXT, REFUSAL, showsRefusal, type LabStage } from '../../lib/labProtocol'
 import { labStore, type Turn } from '../../lib/labStore'
 import { chipsFor } from '../../lib/labChips'
 import { SupportChip } from './SupportChip'
@@ -65,7 +65,9 @@ export function LabTurn({ turn, busy }: { turn: Turn; busy: boolean }) {
         </div>
       )}
 
-      {turn.status === 'done' && turn.refused && <p className="pl-15 text-sm leading-6 text-ink">{REFUSAL}</p>}
+      {turn.status === 'done' && showsRefusal(turn.refused, tools.map((tool) => tool.name)) && (
+        <p className="pl-15 text-sm leading-6 text-ink">{REFUSAL}</p>
+      )}
 
       {turn.dropped && (
         <p className="pl-15 text-xs leading-5 text-muted">
