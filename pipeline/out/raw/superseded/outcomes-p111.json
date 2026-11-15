@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-15T03:25:39.134Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@5",
+ "subject": "PSI-25 p.111",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1627,
+  "output": 863,
+  "thinking": 481
+ },
+ "input": "### B1\nIgnited very quickly, turned flow off after spread halfway; flame extinguished very quickly; and sooty with blue leading edge 7/7/2014 GMT 188 --------- 62\n\n### B10\nMultiple velocities for steady spread, extinguished at pot 0.35 7/7/2014 GMT 188 --------- 61\n\n### B11\nMultiple velocities for steady spread, extinguished at pot 0.35 2/19/2014 GMT 2014 050 12:52:07 to 12:53:12 13\n\n### B12\nMostly blue, soot only on bottom 7/7/2014 GMT 188 --------- 63\n\n### B13\nMultiple velocities for steady spread, extinguished at pot 0.35 7/2/14 GMT 183 --------- 47\n\n### B14\nHCl O, only brief ignition, flame extinguished 7/7/2014 GMT 188 --------- 59\n\n### B15\nSpread at 10 cm/s, did not blowoff 7/2/14 GMT 183 --------- 51\n\n### B16\nHCl 1.1 > 1.3; flame quenched after prolonged burn at 0.4 pot, one-sided flame; spread to top side and quenched immediately; did igniter wire affect top flame? 7/2/14 GMT 183 --------- 48\n\n### B17\nBurned steadily at higher flows, extinguished just as we reached a pot of 0.4; vapor jetting more on bottom, possibly because of sample tilted slightly to flow?",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"B1\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Ignited very quickly, turned flow off after spread halfway; flame extinguished very quickly\"\n    },\n    {\n      \"testId\": \"B10\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"steady spread, extinguished at pot 0.35\"\n    },\n    {\n      \"testId\": \"B11\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"steady spread, extinguished at pot 0.35\"\n    },\n    {\n      \"testId\": \"B12\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Mostly blue, soot only on bottom\"\n    },\n    {\n      \"testId\": \"B13\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"steady spread, extinguished at pot 0.35\"\n    },\n    {\n      \"testId\": \"B14\",\n      \"outcome\": \"brief\",\n      \"quote\": \"only brief ignition, flame extinguished\"\n    },\n    {\n      \"testId\": \"B15\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Spread at 10 cm/s, did not blowoff\"\n    },\n    {\n      \"testId\": \"B16\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"flame quenched after prolonged burn at 0.4 pot\"\n    },\n    {\n      \"testId\": \"B17\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Burned steadily at higher flows, extinguished just as we reached\"\n    }\n  ]\n}"
+}

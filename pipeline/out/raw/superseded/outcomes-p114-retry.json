@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-14T18:54:56.236Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@2",
+ "subject": "PSI-25 p.114, rows that failed the check",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1121,
+  "output": 189,
+  "thinking": 128
+ },
+ "input": "### P17\nP17 192m 6.35-mm rod -36 2 Opposed 60, 52, 48, 233, 48, 41 (2.6, 1.6, 1.2, 10, 1.2, 0.36, 0.34) 5, 3, 2, 22, 2, low 250 ---- NA NA N CL A -3 NA ---- F2 1,000 Cont 6 186 16.8 16.5 15.7 15.4 0.95 1.34 57 68 A few finite flows, then tried blowoff without success, turned back down to 2 cm/s, then 0.36, 0.34 pots, oscillated and out at 0.34; leading edge receded slightly but did not blowoff 7/30/14 GMT 211 10:46:00 107",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"P17\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"leading edge receded slightly but did not blowoff\"\n    }\n  ]\n}"
+}

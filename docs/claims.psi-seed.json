@@ -1,0 +1,470 @@
+[
+ {
+  "id": "psi69.pressure",
+  "topic": "investigations",
+  "text": "FLEX tested limiting oxygen at 0.5 to 1.5 atm",
+  "kind": "quoted",
+  "sourceId": "psi-69",
+  "quote": "Select the test pressure (0.5 − 1.5 atm) for the LOI tests.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 42
+  },
+  "verified": true
+ },
+ {
+  "id": "psi69.droplets",
+  "topic": "investigations",
+  "text": "FLEX burned liquid fuel droplets",
+  "kind": "quoted",
+  "sourceId": "psi-69",
+  "quote": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi69.loi",
+  "topic": "investigations",
+  "text": "FLEX goal: limiting oxygen index vs pressure and suppressant",
+  "kind": "quoted",
+  "sourceId": "psi-69",
+  "quote": "determine the Limiting Oxygen Index (LOI) as a function of ambient pressure",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi69.suppressants",
+  "topic": "investigations",
+  "text": "FLEX measured CO2, He and SF6 suppressants",
+  "kind": "quoted",
+  "sourceId": "psi-69",
+  "quote": "measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 71
+  },
+  "verified": true
+ },
+ {
+  "id": "psi69.platform",
+  "topic": "investigations",
+  "text": "FLEX hardware: Combustion Integrated Rack, MDCA",
+  "kind": "quoted",
+  "sourceId": "psi-69",
+  "quote": "Combustion Integrated Rack (CIR)-Fluids and Combustion Facility (FCF), Multi-user Droplet Combustion Appartatus (MDCA)",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 57
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.cygnus",
+  "topic": "investigations",
+  "text": "Saffire-I ran on a Cygnus after it left the ISS",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.platform-field",
+  "topic": "investigations",
+  "text": "Saffire-I's Flight Platform field says ISS",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "Comment[Flight Platform]\tInternational Space Station (ISS)",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 46
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.sibal",
+  "topic": "investigations",
+  "text": "Saffire-I burned SIBAL: 75% cotton, 25% fiberglass",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight)",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.size",
+  "topic": "investigations",
+  "text": "Saffire-I sample about 0.94 m long and 0.4 m wide",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "The sample was approximately 0.94 meters long and 0.4 meters wide",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.flow",
+  "topic": "investigations",
+  "text": "Saffire-I airflow 20 cm/s",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "Saffire-I was conducted at an air flow velocity of 20 cm/s.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.start",
+  "topic": "investigations",
+  "text": "Saffire-I record lists start date 03-02-2001",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "Comment[Investigation Start Date]\t03-02-2001",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 52
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.end",
+  "topic": "investigations",
+  "text": "Saffire-I record lists end date 02-28-2008",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "Comment[Investigation End Date]\t02-28-2008",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 51
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.table-s1",
+  "topic": "investigations",
+  "text": "Saffire-I S1: SIBAL, length 40.6 cm, width 94 cm, 20 cm/s, 21.5-21.7% O2, burned 420 s, concurrent",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "S1,SIBAL Fabric,0.37,40.6,94,20,21.5 - 21.7,182,8,420,Concurrent",
+  "locator": {
+   "file": "PSI-98_Experimental_table_SAFFIRE-1.csv",
+   "line": 2
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.table-s2",
+  "topic": "investigations",
+  "text": "Saffire-I S2: same fabric, opposed flow, burned 70 s",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "S2,SIBAL Fabric,0.37,40.6,94,20,~ 21.5,182,8,70,Opposed",
+  "locator": {
+   "file": "PSI-98_Experimental_table_SAFFIRE-1.csv",
+   "line": 3
+  },
+  "verified": true
+ },
+ {
+  "id": "psi98.table-header",
+  "topic": "investigations",
+  "text": "Saffire-I table columns",
+  "kind": "quoted",
+  "sourceId": "psi-98",
+  "quote": "Sample Number ,Material,Sample Thickness (cm),Sample Length (cm),Sample Width (cm),Air Flow (cm/s),Percent O2",
+  "locator": {
+   "file": "PSI-98_Experimental_table_SAFFIRE-1.csv",
+   "line": 1
+  },
+  "verified": true
+ },
+ {
+  "id": "psi99.samples",
+  "topic": "investigations",
+  "text": "Saffire-II: 9 samples, each 5 x 29 cm",
+  "kind": "quoted",
+  "sourceId": "psi-99",
+  "quote": "Saffire-II has a sample card that contains 9 samples, each 5 cm x 29 cm.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi99.materials",
+  "topic": "investigations",
+  "text": "Saffire-II materials: SIBAL, silicone, structure PMMA, flat PMMA, PMMA with Nomex",
+  "kind": "quoted",
+  "sourceId": "psi-99",
+  "quote": "added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi99.flow",
+  "topic": "investigations",
+  "text": "Saffire-II airflow 20 or 30 cm/s, concurrent or opposed",
+  "kind": "quoted",
+  "sourceId": "psi-99",
+  "quote": "conducted at an air flow velocity of either 20 or 30 cm/s, the flow being either concurrent or opposed",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi99.objective",
+  "topic": "investigations",
+  "text": "Saffire-II compares low-g flammability limits with NASA's 1g screening test",
+  "kind": "quoted",
+  "sourceId": "psi-99",
+  "quote": "to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 58
+  },
+  "verified": true
+ },
+ {
+  "id": "psi99.start",
+  "topic": "investigations",
+  "text": "Saffire-II start date 09-30-2016",
+  "kind": "quoted",
+  "sourceId": "psi-99",
+  "quote": "Comment[Investigation Start Date]\t09-30-2016",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 52
+  },
+  "verified": true
+ },
+ {
+  "id": "psi102.detector",
+  "topic": "investigations",
+  "text": "SAME supports an advanced fire detector for future spacecraft",
+  "kind": "quoted",
+  "sourceId": "psi-102",
+  "quote": "The SAME experiment will provide technology for an advanced fire detector for future spacecraft",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 66
+  },
+  "verified": true
+ },
+ {
+  "id": "psi102.smoke",
+  "topic": "investigations",
+  "text": "SAME used smoke from overheated spacecraft materials",
+  "kind": "quoted",
+  "sourceId": "psi-102",
+  "quote": "The measurements were made using smoke generated by overheated  spacecraft materials",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi102.start",
+  "topic": "investigations",
+  "text": "SAME record lists start date 03-02-2001",
+  "kind": "quoted",
+  "sourceId": "psi-102",
+  "quote": "Comment[Investigation Start Date]\t03-02-2001",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 53
+  },
+  "verified": true
+ },
+ {
+  "id": "psi102.end",
+  "topic": "investigations",
+  "text": "SAME record lists end date 02-28-2008",
+  "kind": "quoted",
+  "sourceId": "psi-102",
+  "quote": "Comment[Investigation End Date]\t02-28-2008",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 52
+  },
+  "verified": true
+ },
+ {
+  "id": "psi26.hypothesis",
+  "topic": "investigations",
+  "text": "BASS hypothesis: with ventilation, materials burn as well or better in microgravity",
+  "kind": "quoted",
+  "sourceId": "psi-26",
+  "quote": "materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 50
+  },
+  "verified": true
+ },
+ {
+  "id": "psi26.objective-test1",
+  "topic": "investigations",
+  "text": "BASS objective: bridge NASA-STD-6001 Test 1 and real microgravity flammability",
+  "kind": "quoted",
+  "sourceId": "psi-26",
+  "quote": "Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in microgravity.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 61
+  },
+  "verified": true
+ },
+ {
+  "id": "psi26.impacts",
+  "topic": "investigations",
+  "text": "NASA material selection uses a 1g test without low-gravity effects",
+  "kind": "quoted",
+  "sourceId": "psi-26",
+  "quote": "Current NASA spacecraft materials selection is based on a standard test method (NASA–STD–6001 Test 1) that segregates material based on 1-g behavior without consideration of low gravity effects.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 69
+  },
+  "verified": true
+ },
+ {
+  "id": "psi62.modeling",
+  "topic": "investigations",
+  "text": "PSI-62 models concurrent flame spread and compares to BASS",
+  "kind": "quoted",
+  "sourceId": "psi-62",
+  "quote": "The approach combined high-resolution computational modeling with experimental validation to study concurrent flame spread in microgravity.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.cygnus",
+  "topic": "investigations",
+  "text": "Saffire-III ran on a Cygnus after it left the ISS",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "The Saffire-III experiments were performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.sibal",
+  "topic": "investigations",
+  "text": "Saffire-III also burned SIBAL fabric",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "the Saffire III investigation also used SIBAL as the sample material",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.flow",
+  "topic": "investigations",
+  "text": "Saffire-III airflow 30 cm/s, vs 20 cm/s in Saffire-I",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "the experiments were conducted at a flow velocity of 30 cm/s compared to 20 cm/s during Saffire I",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.objective",
+  "topic": "investigations",
+  "text": "Saffire-III compares low-g flammability limits with NASA's 1g screening test",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 59
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.platform-field",
+  "topic": "investigations",
+  "text": "Saffire-III's Flight Platform field says ISS",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "Comment[Flight Platform]\tInternational Space Station (ISS)",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 46
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.impacts-copied",
+  "topic": "investigations",
+  "text": "Saffire-III's Research Impacts text names Saffire-I (identical to Saffire-I's record)",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "The Saffire-I experiment provides a new way to study a realistic fire on an exploration vehicle",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 66
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.start",
+  "topic": "investigations",
+  "text": "Saffire-III start date 04-18-2017; end date not stated",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "Comment[Investigation Start Date]\t04-18-2017",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 52
+  },
+  "verified": true
+ },
+ {
+  "id": "psi100.details-file",
+  "topic": "investigations",
+  "text": "Sample details are in a separate Experimental Details file on PSI",
+  "kind": "quoted",
+  "sourceId": "psi-100",
+  "quote": "Details related to samples and experimental parameters are provided in the Experimental Details file in the Science document folder.",
+  "locator": {
+   "file": "i_Investigation.txt",
+   "line": 40
+  },
+  "verified": true
+ }
+]

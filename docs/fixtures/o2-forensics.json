@@ -1,0 +1,71 @@
+{
+ "rule": "calibrated = uncalibrated + offset, where offset = calibrated initial - uncalibrated initial (bass2.sensor.mca-offset). A blank uncalibrated reading was treated as 0.",
+ "columnsClaim": "bass2.table.o2-columns",
+ "rows": [
+  {
+   "test": "B2",
+   "calibratedInitial": 22.2,
+   "calibratedFinal": 1.6,
+   "uncalibratedInitial": 20.6,
+   "uncalibratedFinal": null,
+   "offset": 1.6,
+   "reproduced": 1.6,
+   "matches": true,
+   "explanation": "Uncalibrated final reading is blank, so the result is just the offset: 0 + (22.2 - 20.6) = 1.6.",
+   "claimId": "bass2.o2forensic.b2",
+   "noteClaimId": "bass2.note.b2"
+  },
+  {
+   "test": "P22a",
+   "calibratedInitial": 20.8,
+   "calibratedFinal": 0.6,
+   "uncalibratedInitial": 20.2,
+   "uncalibratedFinal": null,
+   "offset": 0.6,
+   "reproduced": 0.6,
+   "matches": true,
+   "explanation": "Uncalibrated final reading is blank, so the result is just the offset: 0 + (20.8 - 20.2) = 0.6.",
+   "claimId": "bass2.o2forensic.p22a",
+   "noteClaimId": "bass2.note.p22a"
+  },
+  {
+   "test": "P22b",
+   "calibratedInitial": 20.0,
+   "calibratedFinal": 39.1,
+   "uncalibratedInitial": null,
+   "uncalibratedFinal": 19.1,
+   "offset": 20.0,
+   "reproduced": 39.1,
+   "matches": true,
+   "explanation": "Uncalibrated initial reading is blank, so the offset became 20.0 - 0 = 20.0. Final 19.1 + 20.0 = 39.1.",
+   "claimId": "bass2.o2forensic.p22b",
+   "noteClaimId": null
+  },
+  {
+   "test": "T28a",
+   "calibratedInitial": 20.7,
+   "calibratedFinal": 0.9,
+   "uncalibratedInitial": 19.8,
+   "uncalibratedFinal": null,
+   "offset": 0.9,
+   "reproduced": 0.9,
+   "matches": true,
+   "explanation": "Uncalibrated final reading is blank, so the result is just the offset: 0 + (20.7 - 19.8) = 0.9.",
+   "claimId": "bass2.o2forensic.t28a",
+   "noteClaimId": "bass2.note.t28a"
+  },
+  {
+   "test": "T28b",
+   "calibratedInitial": 20.7,
+   "calibratedFinal": 40.4,
+   "uncalibratedInitial": null,
+   "uncalibratedFinal": 19.7,
+   "offset": 20.7,
+   "reproduced": 40.4,
+   "matches": true,
+   "explanation": "Uncalibrated initial reading is blank, so the offset became 20.7 - 0 = 20.7. Final 19.7 + 20.7 = 40.4.",
+   "claimId": "bass2.o2forensic.t28b",
+   "noteClaimId": null
+  }
+ ]
+}

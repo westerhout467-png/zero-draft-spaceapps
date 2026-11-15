@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "bass2.flam.min-o2",
+    "topic": "flammability",
+    "text": "Lowest O2 for sustained PMMA-rod flames in BASS-II: about 13.5% at stretch rate a = 8-12 1/s",
+    "value": 13.5,
+    "unit": "% O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The minimum in this boundary occurs at a = 8 to 12 s–1 at approximately 13.5 percent O2",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.vs-1g",
+    "topic": "flammability",
+    "text": "13.5% (microgravity) is significantly lower than the 15.4% upward limit in 1g with 4 cm/s forced flow",
+    "value": 15.4,
+    "unit": "% O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The minimum O2 concentration of 13.5 percent O2 at a of 8 to 12 s–1 is significantly lower than the observed upward flame spread limit of 15.4 percent O2 (in normal gravity with an additional 4-cm/s forced flow (Ref. 23))",
+    "locator": {
+      "pdfPage": 84,
+      "reportPage": 76,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.goldilocks",
+    "topic": "flammability",
+    "text": "The most flammable flow range is typical of spacecraft ventilation near surfaces",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "“Goldilocks” zone of flow is unfortunately typical of spacecraft ventilation flows near surfaces.",
+    "locator": {
+      "pdfPage": 84,
+      "reportPage": 76,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.earth-tests",
+    "topic": "flammability",
+    "text": "Earth-based flammability tests need a method to account for higher flammability in microgravity",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Earthbound flammability tests need a reliable method to account for this extension of flammability in microgravity environments.",
+    "locator": {
+      "pdfPage": 84,
+      "reportPage": 76,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.stretch-def",
+    "topic": "equations",
+    "text": "Stretch rate a = (3/2)(U/r)(r/r0)^1/2, U = free-stream velocity",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "which is defined as a = (3/2)(U/r)(r/ro)½ where U is the free stream velocity",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.r0",
+    "topic": "equations",
+    "text": "Base rod radius r0 = 0.318 cm",
+    "value": 0.318,
+    "unit": "cm",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "All a are normalized to the base rod radius (ro = 0.318 cm)",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.eq61-branches",
+    "topic": "equations",
+    "text": "Eq. 6.1 combines a quenching branch (exponential) and a blowoff branch (linear)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The O2 concentration (XO2) versus a boundary is defined by the combined empirical equations shown by the red (quenching branch, exponential expression) and black (blowoff branch, linear expression) dashed lines.",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.derate",
+    "topic": "flammability",
+    "text": "Extrapolating the linear blowoff branch to zero stretch gives a conservative minimum O2 for flammability in space",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The fact that the blowoff boundary is linear with flow makes it possible to extrapolate blowoff data down to zero a and use that O2 value as an accurate but conservative estimate of the minimum O2 concentration for material flammability in space.",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.derate-method",
+    "topic": "flammability",
+    "text": "This may give a consistent way to derate materials from normal-gravity tests",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "This may provide a consistent methodology to derate materials based on normal-gravity flammability tests",
+    "locator": {
+      "pdfPage": 83,
+      "reportPage": 75,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.low-flow-uncertain",
+    "topic": "flammability",
+    "text": "Flow values below 1 cm/s on the quenching branch are uncertain",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "It also emphasizes the uncertainty in the flow at the very low velocities (<1 cm/s) along the quenching branch.",
+    "locator": {
+      "pdfPage": 84,
+      "reportPage": 76,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.flam.buoyant-20",
+    "topic": "flammability",
+    "text": "Buoyant flow at the base of a 1g flame taken as 20 cm/s",
+    "value": 20,
+    "unit": "cm/s",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "assuming linear superposition of the buoyant flow velocity at the base of the flame (20 cm/s (Ref. 32)) and the 4-cm/s forced-flow velocity",
+    "locator": {
+      "pdfPage": 97,
+      "reportPage": 89,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.ts-def",
+    "topic": "ignition",
+    "text": "Ignition delay normalized by the solid-phase response time ts = 0.7 r^2 / alpha_s",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the ignition delay is normalized by the characteristic solid phase response time",
+    "locator": {
+      "pdfPage": 76,
+      "reportPage": 68,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.alpha-pmma",
+    "topic": "ignition",
+    "text": "Thermal diffusivity of PMMA = 1.2e-3 cm^2/s",
+    "value": 0.0012,
+    "unit": "cm2/s",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "of PMMA 1.2×10–3 cm2/s",
+    "locator": {
+      "pdfPage": 73,
+      "reportPage": 65,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.limit-14.5",
+    "topic": "ignition",
+    "text": "PMMA rods were not ignitable below about 14.5% O2",
+    "value": 14.5,
+    "unit": "% O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "below the ignition limit of ~14.5 percent O2",
+    "locator": {
+      "pdfPage": 76,
+      "reportPage": 68,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.survive-13.6",
+    "topic": "ignition",
+    "text": "Flames ignited at higher O2 survived down to 13.6% O2",
+    "value": 13.6,
+    "unit": "% O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "flames ignited at a higher O2 survived to final O2 concentrations as low as 13.6 percent O2",
+    "locator": {
+      "pdfPage": 76,
+      "reportPage": 68,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.test1-25s",
+    "topic": "ignition",
+    "text": "NASA Test 1 is an upward flame spread test with a fixed ignition time of about 25 s",
+    "value": 25,
+    "unit": "s",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "NASA’s Test 1 (Ref. 16) is an upward flame spread test that has a fixed ignition time of ~25 s",
+    "locator": {
+      "pdfPage": 76,
+      "reportPage": 68,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.230s",
+    "topic": "ignition",
+    "text": "Successful ignitions took as long as 230 s",
+    "value": 230,
+    "unit": "s",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "with ignition delay times as long as 230 s",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.ign.test1-too-short",
+    "topic": "ignition",
+    "text": "Test 1's 25 s ignition time may be too short, making it an ignition test rather than a flammability test",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "NASA Test 1 25-s ignition time may be too short for flammability test and so may be an ignition test.",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.550",
+    "topic": "products",
+    "text": "Concurrent rods: about 550 ppm CO per 1% CO2",
+    "value": 550,
+    "unit": "ppm CO per vol% CO2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the concurrent rods produced on average 550 ppm of CO for every 1 percent of CO2",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.370",
+    "topic": "products",
+    "text": "Opposed thick slabs: about 370 ppm CO per 1% CO2",
+    "value": 370,
+    "unit": "ppm CO per vol% CO2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "producing on average 370 ppm of CO for every 1 percent of CO2",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.opposed-rods",
+    "topic": "products",
+    "text": "Opposed rods had a very nonlinear CO response",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The opposed rods had a very nonlinear response, which may be indicative of a flow effect.",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.flue",
+    "topic": "products",
+    "text": "Efficient flue gases have CO/CO2 below 0.004",
+    "value": 0.004,
+    "unit": "CO/CO2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "For efficiently burned flue gases (boilers, furnaces, etc.), this ratio is typically less than 0.004.",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.order-of-magnitude",
+    "topic": "products",
+    "text": "CO/CO2 ratios were an order of magnitude higher than efficient flue gases",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The CO to CO2 ratios for these fires are an order of magnitude higher than for efficient flue gases",
+    "locator": {
+      "pdfPage": 19,
+      "reportPage": 11,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.smac",
+    "topic": "products",
+    "text": "Diluted into the 106 m3 US Lab, a BASS-II-scale fire gives about 1.5 ppm CO, below the 10 ppm long-term and 55 ppm 1-hour SMACs",
+    "value": 1.5,
+    "unit": "ppm",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the CO levels in the lab would only be 1.5 ppm, well below spacecraft maximum allowable concentration (SMAC) values for even long-term exposure (10 ppm), let alone the 1 hour SMAC of 55 ppm",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.mir",
+    "topic": "products",
+    "text": "On Mir, a smoldering carbon bed caused very high CO station-wide before detection",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "On the Mir space station, a smoldering carbon bed in the Trace Contaminant Control System caused very high CO levels throughout the space station before it was detected.",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.stoich",
+    "topic": "products",
+    "text": "O2 use and CO2 production matched stoichiometric ratios across conditions",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the data agrees very well with stoichiometric ratios for the wide range of test conditions",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.hrr.huggett",
+    "topic": "heat",
+    "text": "Heat release estimated with Huggett's 13.1 kJ per gram O2",
+    "value": 13.1,
+    "unit": "kJ/g O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Using his constant of 13.1 kJ/g O2",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.hrr.below-100",
+    "topic": "heat",
+    "text": "Most tests released well below 100 W",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "most of the tests had heat release rates well below 100 W",
+    "locator": {
+      "pdfPage": 10,
+      "reportPage": 2,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.hrr.damage",
+    "topic": "heat",
+    "text": "The long opposed thick-slab test that damaged the window corner released close to 100 W",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The one long opposed thick slab test that caused the lower downstream corner of the front window damage released close to 100 W.",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.phi",
+    "topic": "heat",
+    "text": "Global equivalence ratio about 1.3 (fuel rich)",
+    "value": 1.3,
+    "unit": "",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the global equivalence ratio for the tests is estimated to be fuel rich, 1.3 on average",
+    "locator": {
+      "pdfPage": 10,
+      "reportPage": 2,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.msg.volume",
+    "topic": "hardware",
+    "text": "MSG free working volume 250 L",
+    "value": 250,
+    "unit": "L",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "250-L free working volume of the MSG",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.radiometer",
+    "topic": "hardware",
+    "text": "The radiometer signal was not calibrated",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The radiometer signal was not calibrated but provided a measure of the flame dynamics and steadiness.",
+    "locator": {
+      "pdfPage": 13,
+      "reportPage": 5,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.osc-1.1hz",
+    "topic": "extinction",
+    "text": "Flames oscillated at 1.1 Hz just before quenching",
+    "value": 1.1,
+    "unit": "Hz",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Prequenching extinction oscillations at 1.1 Hz are observed with a radiometer",
+    "locator": {
+      "pdfPage": 97,
+      "reportPage": 89,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.nomex",
+    "topic": "materials",
+    "text": "Three Nomex samples did not ignite",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The three Nomex® samples did not ignite, which is an excellent result for fire safety aboard the ISS.",
+    "locator": {
+      "pdfPage": 54,
+      "reportPage": 46,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.m5.row",
+    "topic": "tests",
+    "text": "Test M5: 3 mm slab, 2.2 cm wide, two sides, 10 cm/s, 27.2 min, O2 22.2% to 19%",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "M5 3 2.2 2 10 0.071 27.2 22.2 19",
+    "locator": {
+      "pdfPage": 65,
+      "reportPage": 57,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.pressure-1atm",
+    "topic": "hardware",
+    "text": "BASS-II tests ran at 1 atm ambient pressure",
+    "value": 1,
+    "unit": "atm",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Ambient pressure was 1 atm.",
+    "locator": {
+      "pdfPage": 102,
+      "reportPage": 94,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.calorimetry-inputs",
+    "topic": "heat",
+    "text": "O2 consumption calorimetry used R = 82.05 cc·atm/(gmol·K) and P = 1 atm",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "R = 82.05 cc∙atm/gmol K, pressure P = 1 atm",
+    "locator": {
+      "pdfPage": 19,
+      "reportPage": 11,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.model",
+    "topic": "suppression",
+    "text": "N2 dilution of the glovebox is modeled as a continuously stirred tank: c(t) = C0·exp(−r·t/V)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The continuously stirred tank reactor (CSTR) model is based on a mole balance on O2 as follows:",
+    "locator": {
+      "pdfPage": 123,
+      "reportPage": 115,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.volume",
+    "topic": "suppression",
+    "text": "Net MSG working volume about 0.25 m3",
+    "value": 0.25,
+    "unit": "m3",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Net volume V = ~0.25 m3",
+    "locator": {
+      "pdfPage": 123,
+      "reportPage": 115,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.n2-flow",
+    "topic": "suppression",
+    "text": "N2 flow during the on-orbit calibration: 493 cm3/min",
+    "value": 493,
+    "unit": "cm3/min",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "N2 flow rate in = 493 cm3/min or 0.000493 m3/min",
+    "locator": {
+      "pdfPage": 124,
+      "reportPage": 116,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.n2-max",
+    "topic": "suppression",
+    "text": "N2 flow rate 0.0005 m3/min maximum, adjustable",
+    "value": 0.0005,
+    "unit": "m3/min",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "flow rate of gaseous N2, 0.0005 m3/min maximum, adjustable",
+    "locator": {
+      "pdfPage": 123,
+      "reportPage": 115,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.validated",
+    "topic": "suppression",
+    "text": "The dilution model agreed very well with on-orbit O2 sensor readings",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The model agrees very well with CSA-CP readings directly and corrected for the offset to provide a calibrated O2 level with time.",
+    "locator": {
+      "pdfPage": 124,
+      "reportPage": 116,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cstr.hours",
+    "topic": "suppression",
+    "text": "Diluting the glovebox typically took 1 to 3 hours",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "typically took 1 to 3 h to achieve by dilution of the MSG working volume using ISS N2",
+    "locator": {
+      "pdfPage": 14,
+      "reportPage": 6,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.stoich",
+    "topic": "products",
+    "text": "PMMA burns as C5H8O2 + 6 O2 -> 5 CO2 + 4 H2O",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "C5H8O2 + 6 O2 > 5 CO2 + 4 H2O",
+    "locator": {
+      "pdfPage": 14,
+      "reportPage": 6,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.sensor-range",
+    "topic": "products",
+    "text": "The CO sensor read 0 to 1,000 ppm at 1 ppm resolution",
+    "value": 1000,
+    "unit": "ppm",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "with a range of 0 to 1,000 ppm and a resolution of 1 ppm",
+    "locator": {
+      "pdfPage": 14,
+      "reportPage": 6,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.over-range",
+    "topic": "products",
+    "text": "In the one outlier test the CO sensor was over-ranged (>1,000 ppm)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the CO sensor was over-ranged for this test (>1,000 ppm full scale), so we have no quantitative value for CO for",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.outlier-2.8",
+    "topic": "products",
+    "text": "That outlier test reached 2.8% CO2",
+    "value": 2.8,
+    "unit": "% CO2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The one outlier point from Figure 1.3 at 2.8 percent CO2 is not included in Figure 1.4",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.co.scatter",
+    "topic": "products",
+    "text": "Opposed-slab CO/CO2 data has large scatter",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "although scatter is large",
+    "locator": {
+      "pdfPage": 17,
+      "reportPage": 9,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.cabin-dilution",
+    "topic": "products",
+    "text": "Products of a BASS-II-scale fire would be diluted quickly in the large ISS",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the combustion products from a fire of the scale of a BASS–II test would quickly be diluted",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.us-lab-volume",
+    "topic": "products",
+    "text": "US Lab pressurized volume 106 m3",
+    "value": 106,
+    "unit": "m3",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "within just the U.S. Lab (106-m3 pressurized volume)",
+    "locator": {
+      "pdfPage": 16,
+      "reportPage": 8,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.m5.window",
+    "topic": "incident",
+    "text": "The long burn caused overheat damage to the front window corner where a duct leak was occurring",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "the long burn of the relatively strong flame caused overheat damage to the downstream lower corner of the front window in the area where a flow duct leak was occurring",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.m5.leak-repaired",
+    "topic": "incident",
+    "text": "The leak was repaired on orbit and operations continued",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The leak was repaired on orbit, and operations proceeded without further incident.",
+    "locator": {
+      "pdfPage": 15,
+      "reportPage": 7,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.m5.door-repair",
+    "topic": "incident",
+    "text": "Rick Mastracchio repaired the door, keeping the seal and interlock working",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Rick Mastracchio made an excellent repair to the door that maintained the door seal integrity and interlock switch functionality",
+    "locator": {
+      "pdfPage": 19,
+      "reportPage": 11,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.vapor-jet",
+    "topic": "controls",
+    "text": "Vapor bubbles in hot PMMA burst into jets that ignite near a flame",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "When they reach the surface of the material, they rupture and form a vapor jet that ignites in the presence of a flame.",
+    "locator": {
+      "pdfPage": 60,
+      "reportPage": 52,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.suppress-until-cool",
+    "topic": "controls",
+    "text": "Keep suppressing until the material has cooled and stopped emitting vapors",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "This suggests that spacecraft fire suppression efforts should be maintained until the burning material has cooled and stopped emitting vapors.",
+    "locator": {
+      "pdfPage": 60,
+      "reportPage": 52,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.wax-droplet",
+    "topic": "materials",
+    "text": "Low-viscosity melts can eject burning droplets that may ignite other materials",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "If the melt viscosity is low enough, burning droplets can be ejected and possibly ignite other materials.",
+    "locator": {
+      "pdfPage": 54,
+      "reportPage": 46,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2-gradual",
+    "topic": "flammability",
+    "text": "In the 250 L volume, O2 decreased gradually during each test",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "so the O2 very gradually decreased during the test",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.blue-hemispherical",
+    "topic": "flammability",
+    "text": "Near-quench flames were all blue and roughly hemispherical",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "These all-blue flames are roughly hemispherical in shape.",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.quench-28min",
+    "topic": "flammability",
+    "text": "Quench tests lasted up to 28 minutes",
+    "value": 28,
+    "unit": "min",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Quench tests lasted up to 28 min.",
+    "locator": {
+      "pdfPage": 77,
+      "reportPage": 69,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.fig63",
+    "topic": "flammability",
+    "text": "Figure 6.3: representative limit flames for three rod sizes",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Representative limit flames for three rod sizes tested.",
+    "locator": {
+      "pdfPage": 78,
+      "reportPage": 70,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.aspect-0.5",
+    "topic": "flammability",
+    "text": "The flame's length-to-width ratio fell to 0.5 at extinction: a hemispherical flame at the quenching limit",
+    "value": 0.5,
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The aspect ratio (L/W) decreases incrementally to 0.5 at extinction, indicating a hemispherical flame at the quenching limit.",
+    "emphasis": "decreases incrementally to 0.5 at extinction",
+    "locator": {
+      "pdfPage": 78,
+      "reportPage": 70,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.lab-partner",
+    "topic": "story",
+    "text": "The report calls the ISS astronauts its lab partners",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "We also want to thank our lab partner Astronauts",
+    "locator": {
+      "pdfPage": 4,
+      "reportPage": null,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.sensor.co2-res",
+    "topic": "sensors",
+    "text": "CO2 sensor: 0–5% range, 0.1% resolution",
+    "value": 0.1,
+    "unit": "% CO2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "a range of 0 to 5 percent and a resolution of 0.1 percent by volume of CO2",
+    "locator": {
+      "pdfPage": 14,
+      "reportPage": 6,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.sensor.o2-res",
+    "topic": "sensors",
+    "text": "O2 sensor resolution ±0.1% O2",
+    "value": 0.1,
+    "unit": "% O2",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Data symbols are sized to ±0.1 percent O2, resolution of sensor.",
+    "locator": {
+      "pdfPage": 124,
+      "reportPage": 116,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.sensor.mca-offset",
+    "topic": "sensors",
+    "text": "Calibrated O2 = CSA-CP reading corrected by that day's MCA offset",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "The CSA-CP readings were then corrected for the offset from the MCA readings for that day to provide a calibrated O2 reading for each test.",
+    "locator": {
+      "pdfPage": 124,
+      "reportPage": 116,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.m5-los",
+    "topic": "incident",
+    "text": "M5 was ignited during loss of signal with the ground",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Rick ignited while we were loss of signal and out of contact",
+    "locator": {
+      "pdfPage": 117,
+      "reportPage": 109,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.o12",
+    "topic": "tests",
+    "text": "O12: no sustained flame at any flow",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "No sustained flame at any flow, flame with igniter but died",
+    "locator": {
+      "pdfPage": 118,
+      "reportPage": 110,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.o4",
+    "topic": "tests",
+    "text": "O4: larger rod, decreased flow, extinguished at pot 0.36",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Larger rod, decreased flow, extinguished at 0.36",
+    "locator": {
+      "pdfPage": 119,
+      "reportPage": 111,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.b2",
+    "topic": "tests",
+    "text": "B2: no stills taken, cable came loose",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "No stills taken, cable came loose",
+    "locator": {
+      "pdfPage": 112,
+      "reportPage": 104,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.f3",
+    "topic": "tests",
+    "text": "F3: brief ignition flash, no sustained flame, no postburn readings",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Brief ignition flash, no sustained flame; no postburn sensor",
+    "locator": {
+      "pdfPage": 113,
+      "reportPage": 105,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.p22a",
+    "topic": "tests",
+    "text": "P22a: extinguished at higher flow, possibly not preheated",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Extinguished at higher flow, possibly rod not preheated",
+    "locator": {
+      "pdfPage": 115,
+      "reportPage": 107,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.note.t28a",
+    "topic": "tests",
+    "text": "T28a: flame only briefly flashed then went out",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Tried to get one-sided ignition, but flame only briefly flashed",
+    "locator": {
+      "pdfPage": 121,
+      "reportPage": 113,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.table.a4",
+    "topic": "tables",
+    "text": "Table A.4: Miller test matrix",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "TABLE A.4.—MILLER TEST MATRIX",
+    "locator": {
+      "pdfPage": 116,
+      "reportPage": 108,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.table.a5",
+    "topic": "tables",
+    "text": "Table A.5: Olson test matrix",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "TABLE A.5.—OLSON TEST MATRIX",
+    "locator": {
+      "pdfPage": 118,
+      "reportPage": 110,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.table.o2-columns",
+    "topic": "tables",
+    "text": "Appendix A lists calibrated and uncalibrated O2 for every test, plus test observations",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Calibrated initial O2 vol% Calibrated final O2 vol% Initial O2 vol% Final O2 vol%",
+    "locator": {
+      "pdfPage": 111,
+      "reportPage": 103,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.table.observations",
+    "topic": "tables",
+    "text": "Appendix A has a test observations column (ignited, spread, extinguished, burn time)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "Test observations and anomalies (ignited, spread, extinguished, burn time, color, etc.)",
+    "locator": {
+      "pdfPage": 111,
+      "reportPage": 103,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2forensic.b2",
+    "topic": "forensics",
+    "text": "B2: calibrated 22.2 → 1.6, uncalibrated 20.6 → (blank)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "22.2 1.6 20.6 -----",
+    "locator": {
+      "pdfPage": 112,
+      "reportPage": 104,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2forensic.p22a",
+    "topic": "forensics",
+    "text": "P22a: calibrated 20.8 → 0.6, uncalibrated 20.2 → (blank)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "20.8 0.6 20.2 ----",
+    "locator": {
+      "pdfPage": 115,
+      "reportPage": 107,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2forensic.p22b",
+    "topic": "forensics",
+    "text": "P22b: calibrated 20.0 → 39.1, uncalibrated (blank) → 19.1",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "20.0 39.1 ---- 19.1",
+    "locator": {
+      "pdfPage": 115,
+      "reportPage": 107,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2forensic.t28a",
+    "topic": "forensics",
+    "text": "T28a: calibrated 20.7 → 0.9, uncalibrated 19.8 → (blank)",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "20.7 0.9 19.8 ------",
+    "locator": {
+      "pdfPage": 121,
+      "reportPage": 113,
+      "spansNextPage": false
+    },
+    "verified": true
+  },
+  {
+    "id": "bass2.o2forensic.t28b",
+    "topic": "forensics",
+    "text": "T28b: calibrated 20.7 → 40.4, uncalibrated (blank) → 19.7",
+    "kind": "quoted",
+    "sourceId": "nasa-tm-20210011385",
+    "quote": "20.7 40.4 ------ 19.7",
+    "locator": {
+      "pdfPage": 121,
+      "reportPage": 113,
+      "spansNextPage": false
+    },
+    "verified": true
+  }
+]

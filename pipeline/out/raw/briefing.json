@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/briefing.ts",
+ "generatedAt": "2026-11-15T04:17:45.036Z",
+ "model": "gemini-3.5-flash",
+ "promptVersion": "briefing@1",
+ "subject": "briefing",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1110,
+  "output": 145,
+  "thinking": 0
+ },
+ "input": "{\n \"dataset\": \"NASA PSI-25: the BASS-II test table, raw CSV\",\n \"tests\": 129,\n \"testsByPrincipalInvestigator\": {\n  \"Bhattacharjee\": 22,\n  \"Ferkul\": 4,\n  \"Miller\": 20,\n  \"Olson\": 27,\n  \"Fernandez-Pello\": 27,\n  \"T'ien\": 29\n },\n \"testsBySampleFamily\": {\n  \"PMMA thin films\": 22,\n  \"Nomex fabric\": 3,\n  \"Wax candle\": 1,\n  \"PMMA slabs\": 20,\n  \"PMMA rods\": 54,\n  \"SIBAL fabric\": 27,\n  \"PMMA sphere sections\": 2\n },\n \"testsByFlowDirection\": {\n  \"opposed\": 67,\n  \"concurrent\": 38,\n  \"stagnation\": 15,\n  \"not stated\": 9\n },\n \"finalOxygenReadings\": {\n  \"usable\": 122,\n  \"setAside\": 7,\n  \"physicallyImpossible\": 5,\n  \"missing\": 2\n },\n \"otherFlags\": {\n  \"carbonMonoxideAboveSensorRange\": 4,\n  \"otherSensorWarnings\": 18,\n  \"dateErrors\": 3\n },\n \"burnConfirmedBySensors\": {\n  \"tests\": 65,\n  \"rule\": \"CO2 rose by at least 0.2 %, twice the CO2 sensor's 0.1 % resolution\"\n },\n \"initialOxygenPercent\": {\n  \"lowest\": 13.6,\n  \"highest\": 22.2\n },\n \"lowestFinalOxygenWithConfirmedBurn\": {\n  \"percent\": 13.6,\n  \"test\": \"O4\"\n },\n \"lowestUsableFinalOxygen\": {\n  \"percent\": 13.5,\n  \"test\": \"O12\"\n },\n \"carbonMonoxidePerCarbonDioxide\": {\n  \"unit\": \"ppm of CO per 1 % of CO2, over burn-confirmed tests with numeric CO\",\n  \"opposedSlabs\": {\n   \"tests\": 18,\n   \"median\": 366.7,\n   \"mean\": 398.4,\n   \"lowest\": 283.2,\n   \"highest\": 682.1\n  },\n  \"concurrentAndStagnationRods\": {\n   \"tests\": 18,\n   \"median\": 539.2,\n   \"mean\": 487.9,\n   \"lowest\": 56.3,\n   \"highest\": 640\n  },\n  \"opposedRods\": {\n   \"tests\": 18,\n   \"median\": 118.1,\n   \"mean\": 170,\n   \"lowest\": 23.3,\n   \"highest\": 388.9\n  }\n }\n}",
+ "text": "{\n  \"sentences\": [\n    \"The dataset contains 129 BASS-II tests.\",\n    \"PMMA rods were used in 54 of the BASS-II tests.\",\n    \"The audit found 122 usable final oxygen readings and set aside 7 readings.\",\n    \"The lowest initial oxygen level was 13.6 % and the highest was 22.2 %.\",\n    \"Sensors confirmed a burn in 65 tests when CO2 rose by at least 0.2 %.\",\n    \"Test O4 had the lowest final oxygen reading with a confirmed burn at 13.6 %.\"\n  ]\n}"
+}
