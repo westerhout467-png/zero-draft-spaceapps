@@ -1,5 +1,5 @@
 // npm run llm:smoke
-// Sends "say ok" to the LLM (Groq or Gemini, see llm.ts) with the key and model from .env.local,
+// Sends "say ok" to the LLM (OrcaRouter, Groq or Gemini, in that order, see llm.ts) with the key and model from .env.local,
 // and prints "ok" if it answers.
 import { complete, loadLocalEnv } from './llm'
 

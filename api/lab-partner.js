@@ -798,14 +798,11 @@ function requireEnv(name) {
 	return value;
 }
 var client;
-/**
-* Answers worth trying again shortly: "busy" (429, 503) from Gemini or Groq, and Groq's refusals
-* of a malformed reply (bad JSON or a bad tool call), which a second try usually fixes.
-*/
-function isBusy(error) {
-	const text = error instanceof Error ? error.message : String(error);
-	return /\b(429|503)\b|UNAVAILABLE|RESOURCE_EXHAUSTED|high demand|json_validate_failed|tool_use_failed/i.test(text);
-}
+var errorText = (error) => error instanceof Error ? error.message : String(error);
+/** "Busy" answers (429, 503): worth another try shortly, but only from the last provider left. */
+var isBusy = (error) => /\b(429|503)\b|UNAVAILABLE|RESOURCE_EXHAUSTED|high demand/i.test(errorText(error));
+/** Groq's refusals of a malformed reply (bad JSON or a bad tool call), which a second try usually fixes. */
+var isMalformed = (error) => /json_validate_failed|tool_use_failed/i.test(errorText(error));
 var RETRY_DELAYS_MS = [800, 2e3];
 var isRateLimit = (error) => /\b429\b|RESOURCE_EXHAUSTED|rate limit/i.test(error instanceof Error ? error.message : String(error));
 /**
@@ -826,48 +823,111 @@ function rateLimitWaitMs(message) {
 	const asked = match && h + m + sec + ms > 0 ? h * 36e5 + m * 6e4 + sec * 1e3 + ms : 29e3;
 	return Math.min(RATE_LIMIT_MAX_WAIT_MS, Math.max(1e3, Math.ceil(asked) + 1e3));
 }
-/** Which provider answers: Groq whenever its key is set. */
-function provider() {
-	return process.env.GROQ_API_KEY?.trim() ? "groq" : "gemini";
+var KEY_VAR = {
+	orca: "ORCA_API_KEY",
+	groq: "GROQ_API_KEY",
+	gemini: "GEMINI_API_KEY"
+};
+var LABEL = {
+	orca: "OrcaRouter",
+	groq: "Groq",
+	gemini: "Gemini"
+};
+/** The providers to try, in order: every one whose key is set. */
+function providers() {
+	return [
+		"orca",
+		"groq",
+		"gemini"
+	].filter((name) => process.env[KEY_VAR[name]]?.trim());
 }
 /**
-* One call to the LLM. A busy reply (503, 429) is retried twice, after 0.8 s and 2 s, as long as
-* the call's time limit allows; any other error is thrown at once. A pipeline script can also
-* ask to wait out rate limits (rateLimitRetries).
+* One call to the LLM, trying each configured provider in turn until one answers. A provider that
+* isn't the last one left gets half of the time that remains, so a slow one can't use up the
+* whole limit; it is not retried when busy, since the next provider is ready. The last provider
+* retries a busy reply (503, 429) twice, after 0.8 s and 2 s, as long as the time limit allows. A
+* pipeline script can also ask to wait out rate limits (rateLimitRetries).
 */
 async function complete(request) {
 	for (let waited = 0;; waited++) try {
-		return await completeWithin(request);
+		return await completeInOrder(request);
 	} catch (error) {
 		if (waited >= (request.rateLimitRetries ?? 0) || !isRateLimit(error)) throw error;
-		const message = error instanceof Error ? error.message : String(error);
+		const message = errorText(error);
 		if (isDailyLimit(message)) throw error;
 		const wait = rateLimitWaitMs(message);
 		console.error(`  rate limited: waiting ${Math.round(wait / 1e3)} s (try ${waited + 1} of ${request.rateLimitRetries})`);
 		await new Promise((resolve) => setTimeout(resolve, wait));
 	}
 }
-/** One call with its short retries, inside one time limit. */
-async function completeWithin(request) {
+async function completeInOrder(request) {
+	const order = providers();
+	if (order.length === 0) throw new Error("No LLM is configured. Set ORCA_API_KEY and ORCA_MODEL, GROQ_API_KEY and GROQ_MODEL, or GEMINI_API_KEY and GEMINI_MODEL in .env.local, or in Vercel’s environment variables.");
 	const deadline = Date.now() + (request.timeoutMs ?? 6e4);
+	let failure;
+	for (const [index, name] of order.entries()) {
+		const next = order[index + 1];
+		const left = Math.max(1e3, deadline - Date.now());
+		try {
+			return await completeWithin(request, name, next ? Math.floor(left / 2) : left, !next);
+		} catch (error) {
+			failure = error;
+			if (!next) break;
+			console.error(`  ${LABEL[name]} failed, trying ${LABEL[next]}: ${errorText(error).replace(/\s+/g, " ").slice(0, 160)}`);
+		}
+	}
+	throw failure;
+}
+/** One provider's call with its short retries, inside its time limit. */
+async function completeWithin(request, name, limitMs, patient) {
+	const deadline = Date.now() + limitMs;
 	for (let attempt = 0;; attempt++) try {
 		return await completeOnce({
 			...request,
 			timeoutMs: Math.max(1e3, deadline - Date.now())
-		});
+		}, name);
 	} catch (error) {
 		const wait = RETRY_DELAYS_MS[attempt];
-		if (wait === void 0 || !isBusy(error) || Date.now() + wait > deadline - 1e3) throw error;
+		const worthRetrying = isMalformed(error) || patient && isBusy(error);
+		if (wait === void 0 || !worthRetrying || Date.now() + wait > deadline - 1e3) throw error;
 		await new Promise((resolve) => setTimeout(resolve, wait));
 	}
 }
-function completeOnce(request) {
-	return provider() === "groq" ? completeGroq(request) : completeGemini(request);
+function completeOnce(request, name) {
+	if (name === "gemini") return completeGemini(request);
+	if (name === "groq") {
+		const model = requireEnv("GROQ_MODEL");
+		return completeChat({
+			label: "Groq",
+			url: GROQ_URL,
+			key: requireEnv("GROQ_API_KEY"),
+			model,
+			reasoning: groqReasoning(model, request.thinkingLevel),
+			reasoningRoom: isGroqReasoning(model)
+		}, request);
+	}
+	return completeChat({
+		label: "OrcaRouter",
+		url: ORCA_URL,
+		key: requireEnv("ORCA_API_KEY"),
+		model: requireEnv("ORCA_MODEL"),
+		reasoning: orcaReasoning(request.thinkingLevel),
+		reasoningRoom: request.thinkingLevel !== "MINIMAL"
+	}, request);
 }
 var GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-/** Tokens a Groq reasoning model may think for, on top of the answer's own cap. */
+var ORCA_URL = "https://api.orcarouter.ai/v1/chat/completions";
+/** Tokens a reasoning model may think for, on top of the answer's own cap. */
 var REASONING_ROOM = 1024;
 var isGroqReasoning = (model) => /gpt-oss|qwen3/.test(model);
+/**
+* OrcaRouter: switch thinking off when the caller wants it minimal (Lab Partner does), else leave
+* it to the model. Checked live against deepseek-v4.1-flash-free: `reasoning_effort: "none"` gives
+* 0 thinking tokens, while `reasoning: { enabled: false }` only shaves them.
+*/
+function orcaReasoning(level) {
+	return level === "MINIMAL" ? { reasoning_effort: "none" } : {};
+}
 /** How hard a Groq reasoning model thinks: gpt-oss takes low…high, Qwen 3 can switch it off. */
 function groqReasoning(model, level) {
 	if (!level) return {};
@@ -886,9 +946,8 @@ function parseArgs(text) {
 		return {};
 	}
 }
-async function completeGroq(request) {
-	const key = requireEnv("GROQ_API_KEY");
-	const model = requireEnv("GROQ_MODEL");
+async function completeChat(provider, request) {
+	const { label, url, key, model } = provider;
 	const body = {
 		model,
 		messages: [{
@@ -899,8 +958,8 @@ async function completeGroq(request) {
 			content: request.user
 		}],
 		temperature: request.temperature ?? 0,
-		...request.maxOutputTokens ? { max_completion_tokens: request.maxOutputTokens + (isGroqReasoning(model) ? REASONING_ROOM : 0) } : {},
-		...groqReasoning(model, request.thinkingLevel),
+		...request.maxOutputTokens ? { max_completion_tokens: request.maxOutputTokens + (provider.reasoningRoom ? REASONING_ROOM : 0) } : {},
+		...provider.reasoning,
 		...request.tools?.length ? {
 			tools: request.tools.map((tool) => ({
 				type: "function",
@@ -920,7 +979,7 @@ async function completeGroq(request) {
 			}
 		} : { type: "json_object" } } : {}
 	};
-	const response = await fetch(GROQ_URL, {
+	const response = await fetch(url, {
 		method: "POST",
 		headers: {
 			authorization: `Bearer ${key}`,
@@ -929,16 +988,19 @@ async function completeGroq(request) {
 		body: JSON.stringify(body),
 		signal: AbortSignal.timeout(request.timeoutMs ?? 6e4)
 	});
-	if (!response.ok) throw new Error(`${response.status} from Groq: ${(await response.text()).slice(0, 300)}`);
+	if (!response.ok) throw new Error(`${response.status} from ${label}: ${(await response.text()).slice(0, 300)}`);
 	const data = await response.json();
 	const choice = data.choices?.[0];
 	const message = choice?.message ?? {};
+	const text = typeof message.content === "string" ? message.content : "";
+	const functionCalls = (message.tool_calls ?? []).map((call) => ({
+		name: call.function?.name ?? "",
+		args: parseArgs(call.function?.arguments)
+	}));
+	if (request.json && !text.trim() && functionCalls.length === 0) throw new Error(`${label} returned an empty reply (finish reason: ${choice?.finish_reason ?? "none"})`);
 	return {
-		text: typeof message.content === "string" ? message.content : "",
-		functionCalls: (message.tool_calls ?? []).map((call) => ({
-			name: call.function?.name ?? "",
-			args: parseArgs(call.function?.arguments)
-		})),
+		text,
+		functionCalls,
 		model: data.model ?? model,
 		finishReason: choice?.finish_reason === "length" ? "MAX_TOKENS" : (choice?.finish_reason ?? "").toUpperCase(),
 		usage: {
