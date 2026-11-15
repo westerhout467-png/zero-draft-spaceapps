@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-15T03:37:00.512Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@5",
+ "subject": "PSI-25 p.113",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1434,
+  "output": 587,
+  "thinking": 400
+ },
+ "input": "### F1\nIgnited briefly but did not spread at all and extinguished while the igniter was still on 7/28/2014 GMT 209 -------- 103\n\n### F2\nTried to ignite, flame would not sustain 8/1/14 GMT 213 8:58:25 115\n\n### F3\nBrief ignition flash, no sustained flame; no postburn sensor readings taken 6/24/2018 -------- 36\n\n### F4\nLong ignition, but blue flame established at 3 cm/s, reduced flow in increments: potentiometers 0.6, 0.4, 0.35, 0.32, 0.31, 0.305 flame extinguished",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"F1\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Ignited briefly but did not spread at all and extinguished while the igniter was still on\"\n    },\n    {\n      \"testId\": \"F2\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Tried to ignite, flame would not sustain\"\n    },\n    {\n      \"testId\": \"F3\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Brief ignition flash, no sustained flame; no postburn sensor readings taken\"\n    },\n    {\n      \"testId\": \"F4\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"blue flame established at 3 cm/s, reduced flow in increments\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/lab-partner.js": {
+      "maxDuration": 60
+    }
+  }
+}

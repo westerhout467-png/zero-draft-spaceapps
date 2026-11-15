@@ -1,0 +1,113 @@
+[
+  {
+    "id": "nasa-tm-20210011385",
+    "title": "Burning and Suppression of Solids–II (BASS–II) Summary Report, Olson et al.",
+    "short": "BASS-II report",
+    "publisher": "NASA (NASA/TM-20210011385)",
+    "year": 2021,
+    "doi": null,
+    "url": "https://ntrs.nasa.gov/citations/20210011385",
+    "kind": "report",
+    "credit": "Eq. 6.1 (report p. 75) is shown as printed in NASA/TM-20210011385, Olson et al., NASA, 2021"
+  },
+  {
+    "id": "psi-25",
+    "title": "Burning and Suppression of Solids – II (BASS-II)",
+    "short": "PSI-25",
+    "publisher": "NASA PSI Data Repository",
+    "year": 2022,
+    "doi": "10.60555/4qc4-de67",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-26",
+    "title": "Burning and Suppression of Solids (BASS)",
+    "short": "PSI-26",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/58h4-dy80",
+    "url": "https://doi.org/10.60555/58h4-dy80",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-62",
+    "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+    "short": "PSI-62",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/e9xp-ex83",
+    "url": "https://doi.org/10.60555/e9xp-ex83",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-69",
+    "title": "Flame Extinguishment Experiment (FLEX)",
+    "short": "PSI-69",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/mbq8-0451",
+    "url": "https://doi.org/10.60555/mbq8-0451",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-98",
+    "title": "Spacecraft Fire Safety Experiment-I (Saffire-I), with its experimental table",
+    "short": "PSI-98",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/0t15-1z43",
+    "url": "https://doi.org/10.60555/0t15-1z43",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-99",
+    "title": "Spacecraft Fire Experiment-II (Saffire-II)",
+    "short": "PSI-99",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/2chp-m469",
+    "url": "https://doi.org/10.60555/2chp-m469",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-100",
+    "title": "Spacecraft Fire Experiment-III (Saffire-III)",
+    "short": "PSI-100",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/040q-4h36",
+    "url": "https://doi.org/10.60555/040q-4h36",
+    "kind": "dataset"
+  },
+  {
+    "id": "psi-102",
+    "title": "Smoke and Aerosol Measurement Experiment (SAME)",
+    "short": "PSI-102",
+    "publisher": "NASA PSI Data Repository",
+    "year": null,
+    "doi": "10.60555/gd4k-8h62",
+    "url": "https://doi.org/10.60555/gd4k-8h62",
+    "kind": "dataset"
+  },
+  {
+    "id": "zayac-2024",
+    "title": "Flammability of Materials on the Moon (poster), Zayac, Johnston, Ruff and Ferkul",
+    "short": "Zayac 2024",
+    "publisher": "NASA Glenn Research Center",
+    "year": 2024,
+    "doi": null,
+    "url": "https://ntrs.nasa.gov/citations/20240015307",
+    "kind": "poster"
+  },
+  {
+    "id": "olson-ferkul-2017",
+    "title": "Olson & Ferkul, Microgravity Flammability Boundary for PMMA Rods in Axial Stagnation Flow",
+    "short": "Olson & Ferkul 2017",
+    "publisher": "Combustion and Flame 180 (2017) 217–229",
+    "year": 2017,
+    "doi": null,
+    "url": null,
+    "kind": "paper"
+  }
+]

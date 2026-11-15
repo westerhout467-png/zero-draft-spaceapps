@@ -1,0 +1,14 @@
+{
+ "generatedBy": "pipeline/scripts/briefing.ts",
+ "generatedAt": "2026-11-15T04:17:45.039Z",
+ "model": "gemini-3.5-flash",
+ "promptVersion": "briefing@1",
+ "sentences": [
+  "The dataset contains 129 BASS-II tests.",
+  "PMMA rods were used in 54 of the BASS-II tests.",
+  "The audit found 122 usable final oxygen readings and set aside 7 readings.",
+  "The lowest initial oxygen level was 13.6 % and the highest was 22.2 %.",
+  "Sensors confirmed a burn in 65 tests when CO2 rose by at least 0.2 %.",
+  "Test O4 had the lowest final oxygen reading with a confirmed burn at 13.6 %."
+ ]
+}

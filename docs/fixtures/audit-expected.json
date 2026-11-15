@@ -1,0 +1,167 @@
+{
+ "source": "PSI-25_Experimental table_BASS-II.csv (UTF-8 with BOM, CRLF, 17 columns, 129 data rows)",
+ "rules": {
+  "o2-missing": "final O2 cell is empty or 'none'",
+  "o2-impossible": "final O2 > initial + 0.2, or initial - final > 5 (max real drop in BASS-II was 3.2)",
+  "o2-rise-within-resolution": "final O2 > initial by <= 0.2 (sensor resolution is \u00b10.1%: bass2.sensor.o2-res)",
+  "co-over-range": "final CO cell is 'OR', 'over', or starts with '>' (case-insensitive, whole cell)",
+  "co-initial-over-range": "same test on the initial CO cell",
+  "co-missing": "final CO cell is empty or 'none'",
+  "co-negative": "initial CO < 0 ppm (sensor zero drift; resolution 1 ppm)",
+  "co2-missing": "initial or final CO2 cell empty or 'none'",
+  "co2-initial-zero": "initial CO2 is exactly 0 (ISS air always has CO2; NASA table shows 0.00 too)",
+  "date-gmt-mismatch": "GMT day-of-year doesn't match the Date column",
+  "date-year-2018": "year outside the 2014/2016 campaign (NASA table also says 2018)",
+  "note-no-ignition": "Air/Fan display text contains 'no ign'",
+  "note-would-not-stay-lit": "Air/Fan display text contains 'would not stay lit'",
+  "burnConfirmed": "O2 usable and CO2 rose by >= 0.2% (2x the 0.1% CO2 resolution: bass2.sensor.co2-res)"
+ },
+ "counts": {
+  "total": 129,
+  "o2Usable": 122,
+  "byPi": {
+   "Bhattacharjee": 22,
+   "Ferkul": 4,
+   "Miller": 20,
+   "Olson": 27,
+   "Fernandez-Pello": 27,
+   "T'ien": 29
+  },
+  "co-initial-over-range": 1,
+  "co-missing": 5,
+  "co-negative": 13,
+  "co-over-range": 4,
+  "co2-initial-zero": 1,
+  "co2-missing": 8,
+  "date-gmt-mismatch": 1,
+  "date-year-2018": 2,
+  "note-no-ignition": 1,
+  "note-would-not-stay-lit": 1,
+  "o2-impossible": 5,
+  "o2-missing": 2,
+  "o2-rise-within-resolution": 5,
+  "burnConfirmed": 65
+ },
+ "testIds": {
+  "co-initial-over-range": [
+   "O12"
+  ],
+  "co-missing": [
+   "B2",
+   "B14",
+   "F3",
+   "P22a",
+   "T28a"
+  ],
+  "co-negative": [
+   "B4",
+   "B21",
+   "B22",
+   "M10",
+   "O1",
+   "O2",
+   "O5a",
+   "O20",
+   "T25",
+   "T26",
+   "T27",
+   "T28a",
+   "T29"
+  ],
+  "co-over-range": [
+   "M5",
+   "O4",
+   "O12",
+   "O13b"
+  ],
+  "co2-initial-zero": [
+   "B14"
+  ],
+  "co2-missing": [
+   "B2",
+   "B14",
+   "F3",
+   "P3b",
+   "P22a",
+   "P22b",
+   "T28a",
+   "T28b"
+  ],
+  "date-gmt-mismatch": [
+   "O10"
+  ],
+  "date-year-2018": [
+   "T9",
+   "T18"
+  ],
+  "note-no-ignition": [
+   "O12"
+  ],
+  "note-would-not-stay-lit": [
+   "P8"
+  ],
+  "o2-impossible": [
+   "B2",
+   "P22a",
+   "P22b",
+   "T28a",
+   "T28b"
+  ],
+  "o2-missing": [
+   "B14",
+   "F3"
+  ],
+  "o2-rise-within-resolution": [
+   "T5",
+   "T10",
+   "T12",
+   "T13",
+   "T23"
+  ]
+ },
+ "stats_o2Usable": {
+  "o2InitPct": {
+   "n": 122,
+   "mean": 18.479,
+   "min": 13.6,
+   "max": 22.2
+  },
+  "o2FinalPct": {
+   "n": 122,
+   "mean": 17.993,
+   "min": 13.5,
+   "max": 22.2
+  },
+  "dO2Pct": {
+   "n": 122,
+   "mean": 0.486,
+   "min": -0.1,
+   "max": 3.2
+  },
+  "dCO2Pct": {
+   "n": 121,
+   "mean": 0.393,
+   "min": -0.01,
+   "max": 2.78
+  },
+  "dCOppm": {
+   "n": 118,
+   "mean": 129.901,
+   "min": -23.0,
+   "max": 575.0
+  },
+  "heatKJ_fromDeltaO2": {
+   "n": 122,
+   "mean": 20.695,
+   "min": -4.258,
+   "max": 136.242
+  }
+ },
+ "warnings": [
+  "45 of 122 usable rows have |dO2| <= 0.1 (inside sensor resolution): heat estimates for them are noise",
+  "5 usable rows have final O2 > initial (T5 T10 T12 T13 T23): the old compile_bass2.py gives them negative heat",
+  "the dataset's lowest final O2 (13.5%, O12) is a test with no sustained flame (bass2.note.o12); lowest with confirmed burning is 13.6% (O4)",
+  "M5 final CO is '>500' in the CSV and in Table A.4; the report text says the sensor was over-ranged at >1,000 ppm full scale (bass2.co.over-range)",
+  "O10: CSV says GMT 213, Table A.5 says GMT 203 (matches the 7/22/14 date): CSV transcription error"
+ ]
+}

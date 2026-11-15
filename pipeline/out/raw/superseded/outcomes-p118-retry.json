@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-15T03:22:06.621Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@4",
+ "subject": "PSI-25 p.118, rows that failed the check",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1275,
+  "output": 238,
+  "thinking": 168
+ },
+ "input": "### O10\nLeading edge (LE) blew out at fan 81, 25 s for rest of flame to blowoff at maximum flow 7/8/2014 GMT 189 -------- 65",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"O10\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Leading edge (LE) blew out at fan 81, 25 s for rest of flame\"\n    }\n  ]\n}"
+}

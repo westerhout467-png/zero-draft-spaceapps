@@ -1,0 +1,752 @@
+{
+ "generatedBy": "pipeline/scripts/verify.ts",
+ "generatedAt": "2026-11-15T04:17:36.397Z",
+ "model": "gemini-3.5-flash",
+ "promptVersion": "extract-investigation@3",
+ "investigations": [
+  {
+   "id": "PSI-25",
+   "acronym": {
+    "value": "BASS-II",
+    "evidence": [
+     {
+      "file": "BASS-II Summary Report.pdf",
+      "page": 9,
+      "reportPage": 1,
+      "line": null,
+      "quote": "Burning and Suppression of Solids-II (BASS-II)"
+     }
+    ]
+   },
+   "title": {
+    "value": "Burning and Suppression of Solids-II (BASS-II) Summary Report",
+    "evidence": [
+     {
+      "file": "BASS-II Summary Report.pdf",
+      "page": 9,
+      "reportPage": 1,
+      "line": null,
+      "quote": "Burning and Suppression of Solids-II (BASS-II) Summary Report"
+     }
+    ]
+   },
+   "platform": {
+    "value": "Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)",
+    "evidence": [
+     {
+      "file": "BASS-II Summary Report.pdf",
+      "page": 9,
+      "reportPage": 1,
+      "line": null,
+      "quote": "Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "The Burning and Suppression of Solids experiment hardware provides containment for small scale burning of solid samples within the Microgravity Science Glovebox aboard the International Space Station.",
+     "evidence": [
+      {
+       "file": "BASS-II Summary Report.pdf",
+       "page": 9,
+       "reportPage": 1,
+       "line": null,
+       "quote": "The Burning and Suppression of Solids (BASS) experiment hardware is a small flow duct that provides containment for small scale burning of solid samples within the Microgravity Science Glovebox (MSG) aboard the International Space Station (ISS)."
+      }
+     ]
+    },
+    {
+     "text": "The experiment tested variables such as ambient oxygen concentration, ventilation flow velocity, and fuel type, thickness, and geometry.",
+     "evidence": [
+      {
+       "file": "BASS-II Summary Report.pdf",
+       "page": 9,
+       "reportPage": 1,
+       "line": null,
+       "quote": "The main variables tested in BASS-II were ambient O2 concentration, ventilation flow velocity, and fuel type, thickness, and geometry."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-26",
+   "acronym": {
+    "value": "BASS",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 50,
+      "quote": "BASS"
+     }
+    ]
+   },
+   "title": {
+    "value": "Burning and Suppression of Solids",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Burning and Suppression of Solids"
+     }
+    ]
+   },
+   "platform": {
+    "value": "International Space Station (ISS) inside the Microgravity Glove Box (MSG)",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 40,
+      "quote": "International Space Station (ISS) inside the Microgravity Glove Box (MSG)"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "The experiment burned fabric samples of cotton and fiberglass, Nomex, and Ultem aboard the International Space Station inside the Microgravity Glove Box.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "The experiment was conducted aboard the International Space Station (ISS) inside the Microgravity Glove Box (MSG). Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem."
+      }
+     ]
+    },
+    {
+     "text": "It explored flame behavior under concurrent and opposed air flow configurations in microgravity.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 42,
+       "quote": "This investigation explored two primary air flow configurations; concurrent-flow and opposed-flow."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-62",
+   "acronym": {
+    "value": null,
+    "evidence": []
+   },
+   "title": {
+    "value": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography"
+     }
+    ]
+   },
+   "platform": {
+    "value": null,
+    "evidence": []
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "This ground research developed and validated computational modeling techniques for concurrent flame spread in microgravity.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 59,
+       "quote": "The objective of this research was to develop and validate new flamelet generated manifold (FGM) modeling techniques for concurrent flame spread in microgravity."
+      }
+     ]
+    },
+    {
+     "text": "It compared computational simulations against experimental imagery from previous microgravity burning experiments using advanced imaging analysis.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 41,
+       "quote": "Experimental imagery found in PSI from the BASS and BASS-II investigations was post-processed using newly developed two-color tomography methods with DSLR cameras, enabling 3D reconstructions of soot and temperature fields for direct comparison to model predictions."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-69",
+   "acronym": {
+    "value": "FLEX",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 40,
+      "quote": "FLEX"
+     }
+    ]
+   },
+   "title": {
+    "value": "Flame Extinguishment Experiment",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Flame Extinguishment Experiment"
+     }
+    ]
+   },
+   "platform": {
+    "value": "International Space Station (ISS)",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 59,
+      "quote": "International Space Station (ISS)"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": {
+     "min": 0.5,
+     "max": 1.5,
+     "unit": "atm",
+     "psia": {
+      "min": 7.348,
+      "max": 22.044
+     }
+    },
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 42,
+      "quote": "Select the test pressure (0.5 - 1.5 atm) for the LOI tests."
+     }
+    ]
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "The Flame Extinguishment Experiment studies liquid fuel droplets burning on the International Space Station.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 34,
+       "quote": "Flame Extinguishment Experiment"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 59,
+       "quote": "International Space Station (ISS)"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 71,
+       "quote": "aims to map the flammability limits of liquid fuels in microgravity environments"
+      }
+     ]
+    },
+    {
+     "text": "It tests burning behavior and suppression using fire suppressants to improve safety models.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "igniting and observing the burning behavior of relatively large droplets"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 71,
+       "quote": "measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-98",
+   "acronym": {
+    "value": "SAFFIRE-I",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 50,
+      "quote": "SAFFIRE-I"
+     }
+    ]
+   },
+   "title": {
+    "value": "Spacecraft Fire Safety Experiment-I",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Spacecraft Fire Safety Experiment-I"
+     }
+    ]
+   },
+   "platform": {
+    "value": "Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 40,
+      "quote": "Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "The experiment burned a sample of composite cotton-fiberglass fabric inside an unmanned Cygnus resupply vehicle after it deberthed from the space station.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "The Saffire-1 experiments was performed on the Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight)."
+      }
+     ]
+    },
+    {
+     "text": "It was designed to determine how rapidly a large scale fire grows in low gravity without putting a crew at risk.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 59,
+       "quote": "(1) determine how rapidly a large scale fire grows in low-gravity"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 48,
+       "quote": "To address this knowledge gap, this investigation proposed to conduct large-scale fire safety experiments in an expendable spacecraft without risk to a crew."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-99",
+   "acronym": {
+    "value": "SAFFIRE-II",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 50,
+      "quote": "SAFFIRE-II"
+     }
+    ]
+   },
+   "title": {
+    "value": "Spacecraft Fire Experiment-II",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Spacecraft Fire Experiment-II"
+     }
+    ]
+   },
+   "platform": {
+    "value": "Cygnus Spacecraft",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 46,
+      "quote": "Cygnus Spacecraft"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": {
+     "min": 20,
+     "max": 30,
+     "unit": "cm/s",
+     "cmS": {
+      "min": 20,
+      "max": 30
+     }
+    },
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 40,
+      "quote": "Depending on the sample material, the Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s, the flow being either concurrent or opposed."
+     }
+    ]
+   },
+   "summary": [
+    {
+     "text": "The Spacecraft Fire Experiment-II was performed on the Cygnus resupply vehicle after it deberthed from the International Space Station.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 34,
+       "quote": "Spacecraft Fire Experiment-II"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "The Saffire-II experiment was performed on the Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS."
+      }
+     ]
+    },
+    {
+     "text": "It burned sample materials including SIBAL, silicone, structured PMMA, flat PMMA, and PMMA with Nomex to study flame growth in low gravity.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex."
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 58,
+       "quote": "determine how rapidly a large scale fire grows in low-gravity"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-100",
+   "acronym": {
+    "value": "SAFFIRE-III",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 50,
+      "quote": "SAFFIRE-III"
+     }
+    ]
+   },
+   "title": {
+    "value": "Spacecraft Fire Experiment-III",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Spacecraft Fire Experiment-III"
+     }
+    ]
+   },
+   "platform": {
+    "value": "International Space Station (ISS)",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 46,
+      "quote": "International Space Station (ISS)"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": {
+     "min": 30,
+     "max": 30,
+     "unit": "cm/s",
+     "cmS": {
+      "min": 30,
+      "max": 30
+     }
+    },
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 40,
+      "quote": "the experiments were conducted at a flow velocity of 30 cm/s compared to 20 cm/s during Saffire I."
+     }
+    ]
+   },
+   "summary": [
+    {
+     "text": "Spacecraft Fire Experiment-III evaluated fires on a Cygnus resupply vehicle after deberthing from the station.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 34,
+       "quote": "Spacecraft Fire Experiment-III"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "The Saffire-III experiments were performed on the Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS."
+      }
+     ]
+    },
+    {
+     "text": "It burned SIBAL sample material to see how fast large fires grow and determine flammability limits in microgravity.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "used SIBAL as the sample material."
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 59,
+       "quote": "determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "PSI-102",
+   "acronym": {
+    "value": "SAME",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 51,
+      "quote": "SAME"
+     }
+    ]
+   },
+   "title": {
+    "value": "Smoke and Aerosol Measurement Experiment",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 34,
+      "quote": "Smoke and Aerosol Measurement Experiment"
+     }
+    ]
+   },
+   "platform": {
+    "value": "International Space Station (ISS)",
+    "evidence": [
+     {
+      "file": "i_Investigation.txt",
+      "page": 1,
+      "reportPage": null,
+      "line": 46,
+      "quote": "International Space Station (ISS)"
+     }
+    ]
+   },
+   "o2Pct": {
+    "value": null,
+    "evidence": []
+   },
+   "pressure": {
+    "value": null,
+    "evidence": []
+   },
+   "flow": {
+    "value": null,
+    "evidence": []
+   },
+   "summary": [
+    {
+     "text": "The Smoke and Aerosol Measurement Experiment was conducted on the International Space Station to measure smoke produced by overheated spacecraft materials.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 34,
+       "quote": "Smoke and Aerosol Measurement Experiment"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 46,
+       "quote": "International Space Station (ISS)"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "The measurements were made using smoke generated by overheated spacecraft materials"
+      }
+     ]
+    },
+    {
+     "text": "It studied smoke particle growth and detector responses to improve future fire detection hardware for space missions.",
+     "evidence": [
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 59,
+       "quote": "quantify the sizes that the liquid smoke particulate achieves in low gravity"
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 40,
+       "quote": "analyzed to determine the response of the detectors."
+      },
+      {
+       "file": "i_Investigation.txt",
+       "page": 1,
+       "reportPage": null,
+       "line": 66,
+       "quote": "provide technology for an advanced fire detector for future spacecraft that will be used for long duration missions."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "failures": [
+  {
+   "id": "PSI-26",
+   "field": "flowRange",
+   "reason": "its quote “40 cm/s” is under 3 words, too short to prove a number"
+  },
+  {
+   "id": "PSI-98",
+   "field": "flowRange",
+   "reason": "its quote “20 cm/s” is under 3 words, too short to prove a number"
+  }
+ ]
+}

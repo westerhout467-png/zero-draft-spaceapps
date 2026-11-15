@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-15T03:22:09.048Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@4",
+ "subject": "PSI-25 p.119",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1568,
+  "output": 931,
+  "thinking": 566
+ },
+ "input": "### O3a\nFlame extinguished as soon as he turned flow down, probably overshot, flame sooty at 5 cm/s -------- 24\n\n### O3b\nFlame sooty even at lower flows, didn't get blue until air reading was zero 7/8/2014 GMT 189 -------- 66\n\n### O4\nLarger rod, decreased flow, extinguished at 0.36, HCl 9.7 7/21/14 GMT 202 15:59 89\n\n### O5a\nHard to ignite, broke two igniters, burned for 9 min then blew out with pot of 4.0, tried to stay lit but blew off after multiple oscillations. 7/21/14 GMT 202 17:02 90\n\n### O5b\nWould not sustain a flame without igniter on, broke igniter again 6/26/2014 -------- 37\n\n### O6\n6/26/2014 -------- 38\n\n### O7\nBlowoff fan 97, HCl post 4.9 6/26/2014 -------- 39\n\n### O8a\nQuench at pot 0.31, HCL 4.8 to 5.9 6/26/2014 -------- 40\n\n### O8b\nBlowoff fan 78, HCl prepost 5.9 to 7.9 6/26/2014 -------- 41\n\n### O9\nBlowoff fan 68, HCl 7.5 to 9.3",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"O3a\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Flame extinguished as soon as he turned flow down\"\n    },\n    {\n      \"testId\": \"O3b\",\n      \"outcome\": \"not-stated\",\n      \"quote\": \"\"\n    },\n    {\n      \"testId\": \"O4\",\n      \"outcome\": \"brief\",\n      \"quote\": \"extinguished at 0.36\"\n    },\n    {\n      \"testId\": \"O5a\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"burned for 9 min\"\n    },\n    {\n      \"testId\": \"O5b\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Would not sustain a flame\"\n    },\n    {\n      \"testId\": \"O6\",\n      \"outcome\": \"not-stated\",\n      \"quote\": \"\"\n    },\n    {\n      \"testId\": \"O7\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Blowoff fan 97\"\n    },\n    {\n      \"testId\": \"O8a\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Quench at pot 0.31\"\n    },\n    {\n      \"testId\": \"O8b\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Blowoff fan 78\"\n    },\n    {\n      \"testId\": \"O9\",\n      \"outcome\": \"sustained\",\n      \"quote\": \"Blowoff fan 68\"\n    }\n  ]\n}"
+}

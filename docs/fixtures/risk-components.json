@@ -1,0 +1,317 @@
+{
+ "rules": {
+  "burnConfirmed": "O2 usable and CO2 rose by >= 0.2% (2x the 0.1% CO2 resolution: bass2.sensor.co2-res)",
+  "lowO2": "lowest final O2 among burn-confirmed tests; needs >= 3 burn-confirmed tests",
+  "coYield": "median of (dCO / dCO2) over burn-confirmed tests with numeric CO; needs >= 3",
+  "ignitionGap": "rods only: 0.7 r^2 / 1.2e-3 / 25",
+  "ranked": "entity needs >= 2 components"
+ },
+ "entities": [
+  {
+   "id": "nomex",
+   "label": "Nomex III fabric",
+   "tests": 3,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Concurrent": 3
+   }
+  },
+  {
+   "id": "pmma-film-0.1",
+   "label": "PMMA thin film, 0.1 mm",
+   "tests": 8,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Opposed": 8
+   }
+  },
+  {
+   "id": "pmma-film-0.2",
+   "label": "PMMA thin film, 0.2 mm",
+   "tests": 10,
+   "burnConfirmed": 1,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Opposed": 10
+   }
+  },
+  {
+   "id": "pmma-film-0.3",
+   "label": "PMMA thin film, 0.3 mm",
+   "tests": 2,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Opposed": 2
+   }
+  },
+  {
+   "id": "pmma-film-0.4",
+   "label": "PMMA thin film, 0.4 mm",
+   "tests": 2,
+   "burnConfirmed": 1,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Opposed": 2
+   }
+  },
+  {
+   "id": "pmma-rod-12.7",
+   "label": "PMMA rod, 12.7 mm",
+   "tests": 9,
+   "burnConfirmed": 8,
+   "components": {
+    "lowO2": {
+     "value": 14.2,
+     "unit": "% O2 (final)",
+     "n": 8,
+     "test": "O5a"
+    },
+    "coYield": {
+     "value": 334.1,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 7
+    },
+    "ignitionGap": {
+     "value": 9.409,
+     "unit": "t_s / 25 s",
+     "n": null
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Concurrent": 4,
+    "None": 1,
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-rod-6.35",
+   "label": "PMMA rod, 6.35 mm",
+   "tests": 31,
+   "burnConfirmed": 25,
+   "components": {
+    "lowO2": {
+     "value": 14.3,
+     "unit": "% O2 (final)",
+     "n": 25,
+     "test": "O17"
+    },
+    "coYield": {
+     "value": 310.7,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 25
+    },
+    "ignitionGap": {
+     "value": 2.352,
+     "unit": "t_s / 25 s",
+     "n": null
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "None": 3,
+    "Concurrent": 8,
+    "Stagnation": 7,
+    "Opposed": 13
+   }
+  },
+  {
+   "id": "pmma-rod-9.525",
+   "label": "PMMA rod, 9.525 mm",
+   "tests": 14,
+   "burnConfirmed": 9,
+   "components": {
+    "lowO2": {
+     "value": 13.6,
+     "unit": "% O2 (final)",
+     "n": 9,
+     "test": "O4"
+    },
+    "coYield": {
+     "value": 291.4,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 8
+    },
+    "ignitionGap": {
+     "value": 5.292,
+     "unit": "t_s / 25 s",
+     "n": null
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Stagnation": 5,
+    "None": 1,
+    "Opposed": 8
+   }
+  },
+  {
+   "id": "pmma-slab-1",
+   "label": "PMMA slab, 1 mm",
+   "tests": 4,
+   "burnConfirmed": 3,
+   "components": {
+    "lowO2": {
+     "value": 18.4,
+     "unit": "% O2 (final)",
+     "n": 3,
+     "test": "M7"
+    },
+    "coYield": {
+     "value": 386.5,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 3
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-slab-2",
+   "label": "PMMA slab, 2 mm",
+   "tests": 4,
+   "burnConfirmed": 4,
+   "components": {
+    "lowO2": {
+     "value": 17.1,
+     "unit": "% O2 (final)",
+     "n": 4,
+     "test": "M17"
+    },
+    "coYield": {
+     "value": 400.8,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 4
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-slab-3",
+   "label": "PMMA slab, 3 mm",
+   "tests": 4,
+   "burnConfirmed": 4,
+   "components": {
+    "lowO2": {
+     "value": 16.8,
+     "unit": "% O2 (final)",
+     "n": 4,
+     "test": "M18"
+    },
+    "coYield": {
+     "value": 359.8,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 3
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-slab-4",
+   "label": "PMMA slab, 4 mm",
+   "tests": 4,
+   "burnConfirmed": 4,
+   "components": {
+    "lowO2": {
+     "value": 17.4,
+     "unit": "% O2 (final)",
+     "n": 4,
+     "test": "M19"
+    },
+    "coYield": {
+     "value": 325.2,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 4
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-slab-5",
+   "label": "PMMA slab, 5 mm",
+   "tests": 4,
+   "burnConfirmed": 4,
+   "components": {
+    "lowO2": {
+     "value": 17.4,
+     "unit": "% O2 (final)",
+     "n": 4,
+     "test": "M20"
+    },
+    "coYield": {
+     "value": 344.4,
+     "unit": "ppm CO per 1% CO2 (median)",
+     "n": 4
+    }
+   },
+   "ranked": true,
+   "flows": {
+    "Opposed": 4
+   }
+  },
+  {
+   "id": "pmma-sphere",
+   "label": "PMMA sphere section, 4 cm",
+   "tests": 2,
+   "burnConfirmed": 2,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Stagnation": 2
+   }
+  },
+  {
+   "id": "sibal-1cm",
+   "label": "SIBAL fabric, 1 cm wide",
+   "tests": 9,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Concurrent": 9
+   }
+  },
+  {
+   "id": "sibal-2cm",
+   "label": "SIBAL fabric, 2 cm wide",
+   "tests": 18,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "None": 4,
+    "Concurrent": 14
+   }
+  },
+  {
+   "id": "wax-candle",
+   "label": "Japan wax candle",
+   "tests": 1,
+   "burnConfirmed": 0,
+   "components": {},
+   "ranked": false,
+   "flows": {
+    "Stagnation": 1
+   }
+  }
+ ]
+}

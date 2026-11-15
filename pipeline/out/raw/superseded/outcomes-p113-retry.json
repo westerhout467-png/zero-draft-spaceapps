@@ -1,0 +1,15 @@
+{
+ "generatedBy": "pipeline/scripts/outcomes.ts",
+ "generatedAt": "2026-11-15T03:50:05.595Z",
+ "model": "openai/gpt-oss-120b",
+ "promptVersion": "read-outcomes@5",
+ "subject": "PSI-25 p.113, rows that failed the check",
+ "finishReason": "STOP",
+ "usage": {
+  "input": 1355,
+  "output": 112,
+  "thinking": 54
+ },
+ "input": "The quotes given before for these tests were not found word for word in their notes, or broke a rule. Copy consecutive words exactly, 15 at most; a shorter quote is safer.\n\n### F1\nIgnited briefly but did not spread at all and extinguished while the igniter was still on 7/28/2014 GMT 209 -------- 103",
+ "text": "{\n  \"outcomes\": [\n    {\n      \"testId\": \"F1\",\n      \"outcome\": \"brief\",\n      \"quote\": \"Ignited briefly but did not spread at all\"\n    }\n  ]\n}"
+}
