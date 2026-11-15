@@ -12,7 +12,7 @@ const generated = (name: string) => existsSync(fileURLToPath(new URL(`./public/d
 
 type Handler = (req: IncomingMessage, res: ServerResponse) => Promise<void>
 
-/** Reads GEMINI_API_KEY and GEMINI_MODEL from .env.local into process.env, once. Vercel sets its own. */
+/** Reads the LLM keys and models (ORCA_, GROQ_, GEMINI_) from .env.local into process.env, once. Vercel sets its own. */
 let envLoaded = false
 function loadLocalEnv() {
   const path = fileURLToPath(new URL('./.env.local', import.meta.url))

@@ -887,10 +887,12 @@ all source text -- chunks.ts --> api/_data/chunks.json                          
 
 **Human review:** read `review.md`, spot-check 3 fields per investigation against the PDFs, and record who checked and when in `REVIEWED.md`.
 
-### 7.3 Provider: Groq, with Gemini as the fallback
+### 7.3 Providers: OrcaRouter, then Groq, then Gemini
 
+- Tried in that order; a provider counts when its key is set. If a call fails for any reason (no credits, rate limit, outage, bad model, an empty JSON answer), the next one is asked. A provider that isn't the last gets half the remaining time and no retry on a busy reply; the last retries twice. `CompleteResult.model` names the one that answered, so every saved `model` is honest. If every provider fails, `complete()` throws the last one's error.
+- OrcaRouter when `ORCA_API_KEY` is set: `ORCA_API_KEY` and `ORCA_MODEL` (`deepseek/deepseek-v4.1-flash-free`, a specific model, never an auto-router), through its OpenAI-style chat completions API (`https://api.orcarouter.ai/v1/chat/completions`) with plain `fetch`. Thinking is switched off with `reasoning_effort: "none"` when the caller asks for `MINIMAL` (Lab Partner does): left on, DeepSeek's thinking used up the answer's 400-token cap and the reply came back empty.
 - Groq when `GROQ_API_KEY` is set: `GROQ_API_KEY` and `GROQ_MODEL` (`openai/gpt-oss-120b`), through Groq's OpenAI-style chat completions API with plain `fetch` (no SDK). Function calling for the tools, `json_schema` output for answers, `reasoning_effort: low`.
-- Otherwise Gemini, as below.
+- Gemini when `GEMINI_API_KEY` is set, as below.
 - SDK: `@google/genai` (3.0 at the time of writing; needs Node 22 or newer).
 - One module, `pipeline/scripts/llm.ts`, used by the scripts and `api/`, exports `complete({ system, user, tools?, json })`. Nothing else imports the SDK.
 - Env vars: `GEMINI_API_KEY` and `GEMINI_MODEL`, in `.env.local` locally and in Vercel environment variables when deployed. Don't hardcode a model name. Pick the current model in Google AI Studio that supports function calling and JSON output, and record it.
